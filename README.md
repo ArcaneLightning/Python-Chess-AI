@@ -8,9 +8,9 @@ The user can play both <strong>WHITE</strong> and <strong>BLACK</strong>
 The python chess library is NOT used
 
 # Sample Output
-<img src="./Chess Pic Starting.png" alt="Start position">
-<img src="./Chess Pic 1st Move.png" alt="First Move by user">
-<img src="./Chess Pic AI.png" alt="Second Move by AI">
+<img src="./Chess Pic Starting.PNG" alt="Start position">
+<img src="./Chess Pic 1st Move.PNG" alt="First Move by user">
+<img src="./Chess Pic AI.PNG" alt="Second Move by AI">
 
 ## Getting started
 Download the repository and install the numpy dependency (not very necessary to the code, so you could edit yourself and replace numpy arrays with lists):
