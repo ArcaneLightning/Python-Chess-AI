@@ -7,7 +7,7 @@ The user can play both <strong>WHITE</strong> and <strong>BLACK</strong>
 
 The python chess library is NOT used
 
-# Sample Output
+## Sample Output
 <img src="./Chess Pic Starting.PNG" alt="Start position">
 <img src="./Chess Pic 1st Move.PNG" alt="First Move by user">
 <img src="./Chess Pic AI.PNG" alt="Second Move by AI">
@@ -35,3 +35,6 @@ or
 e2 e4
 ```
 This will move the piece at e2 to e4.
+
+### Errors, Issues, or Improvements
+If you see any errors or things to improve, create an issue
