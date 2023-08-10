@@ -15,9 +15,7 @@ The python chess library is NOT used
 ## Getting started
 Download the repository and install the numpy dependency (not very necessary to the code, so you could edit yourself and replace numpy arrays with lists):
 ```
-git clone git@github.com:ArcaneLightning/Python-Chess-AI.git
-cd Python-Chess-AI
-pip3 install numpy
+pip install numpy
 ```
 
 Run the program and start playing chess! ♟️
