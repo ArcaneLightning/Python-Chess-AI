@@ -8,10 +8,7 @@ class Move:
 
     # Returns true if (xfrom,yfrom) and (xto,yto) are the same.
     def equals(self, other_move):
-        return self.xfrom == other_move.xfrom and self.yfrom == other_move.yfrom and self.xto == other_move.xto and self.yto == other_move.yto
-
-    # def to_string(self):
-    #     return "(" + str(self.xfrom) + ", " + str(self.yfrom) + ") -> (" + str(self.xto) + ", " + str(self.yto) + ")"
+        return self.xfrom == other_move.xfrom and self.yfrom == other_move.yfrom and self.xto == other_move.xto and self.yto == other_move.yt
 
     def to_letter(self):
         letters = "ABCDEFGH"
