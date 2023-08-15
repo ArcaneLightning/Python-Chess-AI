@@ -1,6 +1,7 @@
 import board, pieces, ai
 from move import Move
 
+
 class Main:
     def __init__(self, color):
         self.color = color
@@ -36,7 +37,7 @@ class Main:
                 return 0
 
             for possible_move in possible_moves:
-                if (move.equals(possible_move)):
+                if (move == possible_move):
                     valid = True
                     break
 
@@ -113,7 +114,7 @@ class Main:
 
                 new_board.perform_move(move)
 
-                print("User move: " + move.to_letter())
+                print("User move: " + str(move))
                 print(new_board.to_string())
 
                 if new_board.is_check(other_color):
@@ -129,7 +130,7 @@ class Main:
                         break
 
                 new_board.perform_move(ai_move)
-                print("AI move: " + ai_move.to_letter())
+                print("AI move: " + str(ai_move))
                 print(new_board.to_string())
 
         else:
@@ -147,7 +148,7 @@ class Main:
                         break
 
                 new_board.perform_move(ai_move)
-                print("AI move: " + ai_move.to_letter())
+                print("AI move: " + str(ai_move))
                 print(new_board.to_string())
 
                 if new_board.is_check(self.color):
@@ -165,8 +166,9 @@ class Main:
 
                 new_board.perform_move(move)
 
-                print("User move: " + move.to_letter())
+                print("User move: " + str(move))
                 print(new_board.to_string())
+
 
 if __name__ == "__main__":
     while True:
