@@ -5,12 +5,9 @@ class Move:
         self.yfrom = yfrom
         self.xto = xto
         self.yto = yto
-
-    # Returns true if (xfrom,yfrom) and (xto,yto) are the same.
-    def equals(self, other_move):
-        return self.xfrom == other_move.xfrom and self.yfrom == other_move.yfrom and self.xto == other_move.xto and self.yto == other_move.yt
-
-    def to_letter(self):
+    
+    # Returns string representation of move as move notation (piece type NOT included)
+    def __str__(self):
         letters = "ABCDEFGH"
 
         new_xfrom = letters[self.xfrom]
@@ -18,4 +15,9 @@ class Move:
         new_xto = letters[self.xto]
         new_yto = 8 - self.yto
 
-        return new_xfrom + str(new_yfrom) + " " + new_xto + str(new_yto)
+        return f"{new_xfrom}{new_yfrom} {new_xto}{new_yto}"
+
+    # Returns true if (xfrom,yfrom) and (xto,yto) are the same.
+    def __eq__(self, other_move):
+        return self.xfrom == other_move.xfrom and self.yfrom == other_move.yfrom and self.xto == other_move.xto and self.yto == other_move.yto
+
